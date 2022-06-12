@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*começo da pagina home*/
+
+header {
+    background-color: black;
+    height: 80px;
+}
+
+.container-grid {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.cabeçalho {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu {
+    width: 884%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-ativo {
+  display: flex;
+}
+
+#barras { 
+  display: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Raleway;
+}
+
+.icone-menu {
+  height: 40px;
+}
+
+.banner {
+   height: 897px;
+
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.banner-console {
+  background-image: url(img/banner.png);
+
+}
+
+.banner-homem {
+  background-image: url(img/banner2.jpg);
+}
+
+.banner-jogo {
+  background-image: url(img/banner3.jpg);
+}
+
+.posicionamento-banner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-banner {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo-banner h1 {
+    color: #57469C;
+    font-family: "Raleway";
+    font-size: 99px;
+    font-weight: bolder;
+}
+
+.conteudo-banner p {
+    color: black;
+    font-family: "Raleway";
+    font-size: 44px;
+}
+
+.conteudo-banner button {
+    padding: 15px;
+    background-color: #57469C;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Raleway";
+    font-size: 25px;
+    border-radius: 5px;
+}   
+/*início do banner 2*/
+
+.banner2 {
+    height: 800px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.conteudo-banner2 h1 {
+  color: #57469C;
+  font-family: "Raleway";
+  font-size: 45px;
+  
+}
+
+/*inicio css galeria*/
+.row figcaption {
+  color: #000000;
+  font-family: "Raleway";
+  font-size: 20px;
+  text-align: center;
+}
+
+/*Fim css galeria*/
+
+/*inicio do banner 3 */
+
+.banner3 {
+  height: 600px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.conteudo-banner3 h1 {
+  color: #57469C;
+  font-family: "Raleway";
+  font-size: 45px;
+  padding-bottom: 20px;
+}
+
+.conteudo-banner3 h3 {
+  color:black;
+  font-family: Raleway;
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+
+.conteudo-banner3 a {
+    padding: 15px;
+    background-color: #57469C;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Raleway";
+    font-size: 25px;
+    border-radius: 5px;
+  }
+
+  /* Inicio do banner 4*/
+
+.banner4 {
+  height: 600px;
+
+   background-color: white;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+  
+.banner4 img {
+  display: flex;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.banner4 button {
+  padding: 10px;
+  background-color: #57469C;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway";
+  font-size: 25px;
+  border-radius: 5px;
+  
+}
+
+/*inicio do banner5*/
+
+.banner5 {
+  height: 100px;
+
+   background-color: rgb(0, 0, 0);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+  
+.banner5 h5 {
+  color: white;
+  font-family: Raleway;
+  font-size: 30px;
+}
+
+.banner5 img {
+  height: 60px;
+  width: 60px;
+  display: inline;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.banner5 img, h5 {
+  display: inline-block;
+  text-align: center;
+}
+
+.conteudo-banner5 {
+  padding-top: 20px;
+  width: 1211px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+footer{
+background-color: #000000;
+}
+
+
+@media (max-width:1300px) {
+  .carousel-inner{
+    width: 85vw;
+  }
+  
+  .lista-de-produtos{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .conteudo-banner2{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .location-listing img{
+    height: 130px;
+    width: 180px;
+    
+  }
+  .conteudo-banner4 h4{
+    font-size: 1rem;
+  }
+
+  .menu{
+    align-items: center;
+    margin-right: 50px;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container-grid {
+    width: 85vw;
+  }
+
+  .banner3 {
+    height: 426px;
+  }
+}
+
+
+@media (max-width:1199px) {
+  .banner2{
+    height: 66%;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  #barras {
+      display: inline-block;
+  }
+
+  .cabeçalho {
+    position: relative;
+  }
+
+  .menu {
+    display: none; 
+
+    position: absolute;
+    top: 80px;
+    right: 0px;
+
+    height: 300px;
+    width: 40vw;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+  }
+
+  .menu a {
+    font-size: 20px;
+  }
+ 
+  .banner{
+  height: 400px;
+  background-image: url(img/4.jpg);
+  background-repeat: no-repeat;
+    
+  }
+
+  .conteudo-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conteudo-banner h1 {
+    font-size: 30px;
+    font-weight: 900;
+    padding: 10px;
+    color: white;
+  }
+
+  .conteudo-banner p {
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    
+  }
+
+  .conteudo-banner button {
+    padding: 20px;
+    font-size: 15px;
+    position: top;
+  }
+
+  .conteudo-banner2 h1 {
+    color: #57469C;
+    font-family: "Raleway";
+    font-size: 35px;
+  }
+
+  .banner2 {
+    height: 600px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .conteudo-banner3{
+    margin-top:100px;
+  }
+  .conteudo-banner3 h1 {
+    color: #57469C;
+    font-family: "Raleway";
+    font-size: 35px;
+  }
+
+  .conteudo-banner3 h3 {
+    color:black;
+    font-family: Raleway;
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+
+  .banner2 {
+    height: 400px;
+  }
+
+}
+
+@media (max-width:838px) {
+  .banner2 {
+    height: 450px;
+  }
+
+  .banner3{
+    height: 286px;
+  }
+  .banner3{
+    margin-bottom:100px;
+    
+  }
+}
+
+@media (max-width:767px) {
+  .banner2{
+    height: 800px;
+  }
+  /* .conteudo-banner3{
+    margin-top:500px;
+  } */
+}
+
+@media (max-width:700px){
+  .conteudo-banner5 h5{
+    font-size: 1rem;
+  }
+ 
+  .conteudo-banner5 img{
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media (max-width:576px) {
+  .banner2{
+    height: 2500px;
+  }
+
+  .banner4 img{
+    width: 80%;
+  }
+  /* .banner3{
+    height: 1000px;
+  } */
+}
+
+
+@media (max-width:500px){
+  .banner2{
+    height: 2200px;
+  }
+ 
+
+  .conteudo-banner4 img{
+    height: 450px;
+
+  }
+
+}
+
+  @media (max-width:450px){
+    .banner2{
+      height: 2000px;
+    }
+  }
+  @media (max-width:400px){
+    .banner2{
+      height: 1800px;
+    }
+  }
+
+
+ @media (max-width:365px){
+  .banner2{
+    height: 1600px;
+  }
+  .banner3{
+    margin-bottom:0px;
+  }
+  footer{
+    margin-top: 0px;
+  }
+  .conteudo-banner4 img{
+    height: 420px;
+
+  }
+  }
+  
+
+  @media (max-width:340px){
+    .banner2{
+      height: 1500px;
+    }
+  }
+  @media (max-width:300px){
+    .banner2{
+      height: 1300px;
+    }
+  }
+  @media (max-width:270px){
+    .banner2{
+      height: 1200px;
+    }
+    .conteudo-banner4 img{
+      height: 400px;
+  
+    }
+  }
+
+  @media (max-width:220px){
+    .banner2{
+      height: 1000px;
+    }
+  }
+   
+
+ 
+
+
+
+
+@media (max-width:205px){
+  .conteudo-banner4 img{
+    height: 350px;
+
+  }
+  footer{
+    margin-top: 0px;
+  }
+}
+
+
+
